@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    enable: true
+    locations: classpath:db\migration
+    schemas: foro_api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/foro_api
+    username: root
+    password: Cgtm1298-6.onion
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
